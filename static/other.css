@@ -1,0 +1,8 @@
+.nav-link{
+              color:white !important;
+              padding-left:15px !important;
+              font-family:'Montserrat', sans-serif;
+            }
+            html {
+  overflow-y: scroll;
+}

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Pandemic Tutors</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+              <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static',filename='other.css')}}">
+
+
+  
+    </head>
+    <body style="background-image:url('{{url_for('static',filename='image_back.png')}}') !important;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#2871fa;"> 
+    <div class="container">
+            <img src="{{url_for('static',filename='logo.png')}}" height="95px">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto"  style="color:white;text-decoration:none;">
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('home')}}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Volunteer</a>
+                    <div class="dropdown-menu">
+                        <a href="https://forms.gle/G2YpyPeXaHS2KvsdA" class="dropdown-item">Volunteer for USACO Class</a>
+                        <a href="https://forms.gle/vxPco4QsLCFD8rs78" class="dropdown-item">Volunteer for Machine Learning Class</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                    <div class="dropdown-menu">
+                        <a href="{{url_for('usaco')}}" class="dropdown-item">Register for USACO Class</a>
+                        <a href="{{url_for('machinelearn')}}" class="dropdown-item">Register for Machine Learning Class</a>
+                    </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+ 
+ </div> 
+<div class = "container" style="padding-top:225px;">
+    
+        {% block content%}
+        {%endblock content%}
+</div>
+<div>
+    <a href="#"></a>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
+<img src="https://stopify.co/DHD6H2">
+</body>    
+</html>

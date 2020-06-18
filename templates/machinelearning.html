@@ -1,0 +1,92 @@
+
+<html>
+    <head>
+        <title>Pandemic Tutors</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+              <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static',filename='other.css')}}">
+
+
+  
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#2871fa;"> 
+    <div class="container">
+            <img src="{{url_for('static',filename='logo.png')}}" height="95px">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color:white;">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto"  style="color:white;text-decoration:none;">
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('home')}}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Volunteer</a>
+                    <div class="dropdown-menu">
+                        <a href="https://forms.gle/G2YpyPeXaHS2KvsdA" class="dropdown-item">Volunteer for USACO Class</a>
+                        <a href="https://forms.gle/vxPco4QsLCFD8rs78" class="dropdown-item">Volunteer for Machine Learning Class</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                    <div class="dropdown-menu">
+                        <a href="{{url_for('usaco')}}" class="dropdown-item">Register for USACO Class</a>
+                        <a href="{{url_for('machinelearn')}}" class="dropdown-item">Register for Machine Learning Class</a>
+                    </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+ 
+ </div> 
+     <h1 style='text-align:center;padding-top:180px;'>
+        Beginner Machine Learning Class      
+
+    </h1>
+<div class = "container" style="padding-top:45px;">
+    <p1 style="font-size:20px;">
+        Requirements:
+        <a class="typeform-share button" href="https://form.typeform.com/to/KMxus7SG" data-mode="popup" style="float:right;display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:45px;text-align:center;margin:0;height:45px;padding:0px 30px;border-radius:22px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+        <ul>
+            <li>Basic understanding of Python</li>
+            <li>Persistence</li>
+        </ul>
+        How does this course work?
+        <ul>
+            <li>Class Sessions on weekends with Skilled tutors</li>
+            <li>Walkthrough machine learning projects using Public Datasets</li>
+            <li>Taught with the programming language Python</li>
+            <li>In order to lower the difficulty we decided not to focus on the math</li>
+        </ul>
+        Why Machine Learning?
+        <br><br>Machine Learning is everywhere and has many uses. It is said that over 75% of the commercial enterprise apps will use AI technology by the year 2021. Even though this course gives you only a basic understanding of machine learning. This course will give you the skills in order to succeed in other more advanced courses.<br>
+    <br>
+    </p1>
+
+</div>
+
+<div>
+    <a href="#"></a>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
+<img src="https://stopify.co/DHD6H2">
+</body>    
+</html>
